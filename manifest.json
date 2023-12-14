@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "URL Interceptor",
+    "version": "0.1",
+    "permissions":
+    [
+        "declarativeNetRequest"
+    ],
+    // For Debug
+    // "permissions":
+    // [
+    //     "declarativeNetRequest",
+    //     "declarativeNetRequestFeedback"
+    // ],
+    "host_permissions":
+    [
+        "https://mail.ensquared.net/*",
+        "https://mail.devalias.net/*"
+    ],
+    "declarative_net_request":
+    {
+        "rule_resources":
+        [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    }
+}

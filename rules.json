@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action":
+        {
+            "type": "redirect",
+            "redirect":
+            {
+                "url": "http://mail.ensquared.net"
+            }
+        },
+        "condition":
+        {
+            "urlFilter": "https://mail.ensquared.net",
+            "resourceTypes":
+            [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 2,
+        "action":
+        {
+            "type": "redirect",
+            "redirect":
+            {
+                "url": "http://mail.devalias.net"
+            }
+        },
+        "condition":
+        {
+            "urlFilter": "https://mail.devalias.net",
+            "resourceTypes":
+            [
+                "main_frame"
+            ]
+        }
+    }
+]
